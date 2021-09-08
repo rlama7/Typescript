@@ -1,2 +1,3 @@
-var id = 5;
+"use strict";
+let id = 5;
 console.log(id); // 5
