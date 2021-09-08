@@ -64,3 +64,11 @@ tsc <fileName.ts>
 ```
 tsc --watch <fileName.ts>
 ```
+
+## Typescript configuration
+
+#### following commands creates tsconfig.json file.
+
+```
+tsc --init
+```
