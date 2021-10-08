@@ -23,4 +23,13 @@ words = ['delta'];
 // Array of type any
 var mix = [0, 1, 'Hello', true];
 mix = [123.4567];
-// Tupble
+// Tuple --> can include two values of different types
+var person = [1, 'Ray', true];
+// Tuple Array --> 
+var employee;
+employee = [
+    [1, 'Jen'],
+    [2, 'Ben'],
+    [3, 'Pen'],
+    [4, 'Ren'],
+];

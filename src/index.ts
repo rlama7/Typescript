@@ -28,4 +28,14 @@ words = ['delta']
 let mix: any[] = [0, 1, 'Hello', true]
 mix = [123.4567]
 
-// Tupble
+// Tuple --> can include two values of different types
+let person: [number, string, boolean]= [1, 'Ray', true];
+// Tuple Array --> 
+let employee: [number, string][]
+employee = [
+	[1, 'Jen'],
+	[2, 'Ben'],
+	[3, 'Pen'],
+	[4, 'Ren'],
+
+]
