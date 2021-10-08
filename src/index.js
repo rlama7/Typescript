@@ -33,3 +33,19 @@ employee = [
     [3, 'Pen'],
     [4, 'Ren'],
 ];
+/**
+ * Union --> holds data of two different types
+ */
+var pid;
+pid = '007'; // string
+pid = 7; // number
+/**
+ * Enum --> allows to define set of named constants either numberic or strings
+ */
+var Direction;
+(function (Direction) {
+    Direction[Direction["Up"] = 0] = "Up";
+    Direction[Direction["Down"] = 1] = "Down";
+    Direction[Direction["Left"] = 2] = "Left";
+    Direction[Direction["Right"] = 3] = "Right"; // index val = 3
+})(Direction || (Direction = {}));

@@ -39,3 +39,20 @@ employee = [
 	[4, 'Ren'],
 
 ]
+
+/**
+ * Union --> holds data of two different types
+ */
+let pid: string | number
+pid = '007' // string
+pid = 7 // number
+
+/**
+ * Enum --> allows to define set of named constants either numberic or strings
+ */
+enum Direction {
+	Up,  // default index val = 0 --> we could change the default index val by --> Up = 1 assigning the default value now rest index value increments by +1
+	Down, // index val = 1
+	Left, // index val = 2
+	Right // index val = 3
+}
