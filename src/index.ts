@@ -56,3 +56,12 @@ enum Direction {
 	Left, // index val = 2
 	Right // index val = 3
 }
+
+/**
+ * enum that accepts string
+ */
+enum Color{
+	Red = 'RED', 
+	Green = 'GREEN', 
+	Blue = 'BLUE', 
+}
