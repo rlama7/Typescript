@@ -135,3 +135,17 @@ const book: BookInterface = {
 
 book.title = 'The Age of Empire' // ok to reassign
 // book.id = 101  // can not reassign since id is read only.
+
+/**
+ * Interface for functions
+ */
+interface MathFunc{
+	(a:number, b: number): number
+}
+
+const sum: MathFunc = (x: number, y: number): number => x + y;
+const sub: MathFunc = (x: number, y: number): number => x - y;
+
+/**
+ * Classes
+ */
