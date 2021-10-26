@@ -88,3 +88,14 @@ const teamRoster: Player = {
 	id: 1,
 	name: 'David'
 }
+
+/**
+ * Type Assertion
+ */
+let cid: any = 1 // initially cid is defined as any type
+let customerId = <number>cid // now cid is of type number
+customerId = cid as number	// anothe way to assert type
+
+/**
+ * Functions
+ */
