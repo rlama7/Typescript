@@ -113,3 +113,25 @@ function print(message: string | number): void {
 	console.log(message);
 }
 console.log('Hello'); // Hello
+
+/**
+ * Interfaces used with functions and/or objects
+ * type used with primitives
+ * readonly property can not be reassigned
+ * ? before field property signifies the field is optional
+ */
+interface BookInterface{
+	readonly id: number
+	author: string
+	title: string
+	yearPublished?: number | string 
+}
+const book: BookInterface = {
+	id: 1, // read only can not be reassigned
+	author: 'Sun Tzu', 
+	title: 'The Art of War',
+	yearPublished: '5th Century'  // optional TS won't complaing
+}
+
+book.title = 'The Age of Empire' // ok to reassign
+// book.id = 101  // can not reassign since id is read only.
