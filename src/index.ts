@@ -98,4 +98,18 @@ customerId = cid as number	// anothe way to assert type
 
 /**
  * Functions
+ * define type of the input parameters and also the return type 
  */
+function add(x:number, y:number): number {
+	return x+y;
+}
+console.log(add(2,3)); //5
+
+/** 
+ * Function
+ * if a function doesn't return then return type must be void
+ */
+function print(message: string | number): void {
+	console.log(message);
+}
+console.log('Hello'); // Hello
