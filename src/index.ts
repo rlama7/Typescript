@@ -65,3 +65,26 @@ enum Color{
 	Green = 'GREEN', 
 	Blue = 'BLUE', 
 }
+
+/**
+ * Objects #1
+ */
+const user:{
+	id: number, 
+	name: string
+} = {
+	id: 1, 
+	name: 'Ray'
+}
+
+/**
+ * Objects #2
+ */
+type Player =  {
+	id: number,
+	name: string
+}
+const teamRoster: Player = {
+	id: 1,
+	name: 'David'
+}
