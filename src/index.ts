@@ -147,5 +147,31 @@ const sum: MathFunc = (x: number, y: number): number => x + y;
 const sub: MathFunc = (x: number, y: number): number => x - y;
 
 /**
- * Classes
+ * Classes #1
+ * 
+ * classes can have field associated with access modifier:
+ * public - default
+ * protected - field with protected access modifier can not be accessed outside the class
+ * private - ''							''										''
  */
+class Person{
+	private id: number 
+	protected name: string 
+	public address: string
+	public DoB?: number // optional public field therefore no complain and not needed in constructor
+
+
+	constructor(id: number, name: string, address: string){
+		this.id = id
+		this.name = name
+		this.address = address
+	} 
+
+	register(){
+		return `{this.name} is now registered.`
+	}
+}
+
+const ray = new Person(1, 'Ray Love', '1 San Francisco CA');
+const taylor = new Person(101, 'Taylor Swift', '101 Hollywood CA');
+console.log(ray, taylor);
