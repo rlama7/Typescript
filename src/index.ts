@@ -175,3 +175,31 @@ class Person{
 const ray = new Person(1, 'Ray Love', '1 San Francisco CA');
 const taylor = new Person(101, 'Taylor Swift', '101 Hollywood CA');
 console.log(ray, taylor);
+console.log(taylor.register());
+
+/**
+ * Classes using interface and keyword 'implements'
+ */
+interface AnimalInterface {
+	id: number,
+	name: string
+	owner: string
+	movement(): string
+}
+
+class Animal implements AnimalInterface {
+	private id: number
+	public name: string
+	protected owner: string
+
+	constructor(id: number, name: string, owner: string){
+		this.id = id,
+		this.name = name,
+		this.owner = owner
+	}
+
+	movement() {
+		return 'walking'
+	}
+
+}
