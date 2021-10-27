@@ -186,7 +186,9 @@ interface AnimalInterface {
 	owner: string
 	movement(): string
 }
-
+/**
+ * Parent Class
+ */
 class Animal implements AnimalInterface {
 	id: number
 	name: string
@@ -204,6 +206,7 @@ class Animal implements AnimalInterface {
 }
 
 /**
+ * Sub Class
  * Extend properties from one class to another
  */
 class Bear extends Animal{
@@ -216,3 +219,16 @@ class Bear extends Animal{
 }
 
 const brown = new Bear (7, 'Brown Bear', 'Mr. Sam', 'Alaska');
+console.log(brown.movement())  // even though Sub Class Bear doesn't have movement() defined it'll extend from Parent 
+
+/**
+ * Generics
+ * Use <T> as a placeholder for Type
+ * 
+ */
+function getArray<T>(items: T[]): T[] {
+	return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1,2,3,4]);
+let strArray = getArray<string>(['Apple', 'Banana', 'Cherry']);
