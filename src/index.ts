@@ -188,9 +188,9 @@ interface AnimalInterface {
 }
 
 class Animal implements AnimalInterface {
-	private id: number
-	public name: string
-	protected owner: string
+	id: number
+	name: string
+	owner: string
 
 	constructor(id: number, name: string, owner: string){
 		this.id = id,
@@ -201,5 +201,18 @@ class Animal implements AnimalInterface {
 	movement() {
 		return 'walking'
 	}
-
 }
+
+/**
+ * Extend properties from one class to another
+ */
+class Bear extends Animal{
+	location: string
+
+	constructor(id: number, name: string, owner: string, location: string) {
+		super(id, name, owner) // extend properties from the parent --> Animal
+		this.location = location; // additinal field
+	}
+}
+
+const brown = new Bear (7, 'Brown Bear', 'Mr. Sam', 'Alaska');
