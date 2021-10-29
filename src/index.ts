@@ -235,3 +235,4 @@ let strArray = getArray<string>(['Apple', 'Banana', 'Cherry']);
 
 numArray.push(100); // pushing number to number array is ok 
 strArray.push('Mango'); // pushing string to string array is ok
+// strArray.push(1); // will generate error as Array of string will not accept number type.
